@@ -2,50 +2,66 @@
     include '../back/ing_electrica.php';
 ?>
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h2 class="text-center mb-3">Maestros del departamento de Ingenieria electrica</h2>
-    <div class="container mb-4" style="display: flex;justify-content: flex-end;">
-      <input type="text" id="barra" placeholder="Realiza tu busqueda"> 
-    </div>
-    <div class="container">
+  <title>Título de tu página</title>
+</head>
 
-    
-  <table class="table table-bordered border-black text-center">
-        <thead>
-          <tr>
-            <th scope="col">Nombre</th>
-            <th scope="col">Correo</th>
-            <th scope="col">Conmutador</th>
-            <th scope="col">Extension</th>
-          </tr>
-        </thead>
-        <tbody id="profes">
-
-        </tbody>
-      </table>
+<body>
+  <?php include './header.php';?>
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <h2 class="text-center mb-3">Personal del departamento de Ingenieria electrica</h2>
+        </div>
       </div>
-    
-    <template id="cardprofes">
-          <tr>
-            <td class="nombre"></td>
-            <td class="correo"></td>
-            <td class="conmutador"></td>
-            <td class="extension"></td>
-          </tr>
-    </template>
-    
+      <div class="row">
+        <div class="col contenido" id="profes">
+          <!-- Contenido del segundo contenedor -->
+        </div>
+      </div>
+    </div>
 
-    <script src="../js/ing_electrica.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+    <template id="cardprofes">
+      <div class="cardstyle">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="../img/preofe.png" class="img-fluid rounded-start">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title nombre"></h5>
+                <div class="divmail">
+                  <p class="card-text correo"></p>
+                  <a href="" class="mailto"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <p class="card-text conmutador"></p>
+                <p class="card-text extension"></p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+
+  </main>
+
+
+
+  <script src="../js/ing_electrica.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

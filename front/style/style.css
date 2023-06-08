@@ -1,0 +1,30 @@
+.divmail {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.contenido {
+    width: 100%;
+    height: 82vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+    padding: 15px;
+}
+
+.mailto {
+    margin-left: 10px;
+}
+
+.barra {
+    border-radius: 15px;
+}
+
+.buscarconr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

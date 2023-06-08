@@ -13,9 +13,11 @@ document.addEventListener('DOMContentLoaded', () =>{
 const profes_elec = (profes) => {
     profes.forEach((profe) => {
         cardprofes.querySelector('.nombre').innerHTML = profe.nombre
-        cardprofes.querySelector('.correo').innerHTML = profe.correo
-        cardprofes.querySelector('.conmutador').innerHTML = profe.conmutador
-        cardprofes.querySelector('.extension').innerHTML = profe.extension
+        cardprofes.querySelector('.correo').innerHTML = "<b>Correo:</b>"+" "+profe.correo
+        const refmail = "mailto:"+profe.correo
+        cardprofes.querySelector('.mailto').setAttribute("href", refmail)
+        cardprofes.querySelector('.conmutador').innerHTML = "<b>Conmutador:</b>"+" "+profe.conmutador
+        cardprofes.querySelector('.extension').innerHTML = "<b>Extension:</b>"+" "+profe.extension
         const clone = cardprofes.cloneNode(true)
         fragment.appendChild(clone)
     })
