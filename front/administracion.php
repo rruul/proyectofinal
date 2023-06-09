@@ -50,7 +50,7 @@
                 </div>
                 <p class="card-text conmutador"></p>
                 <p class="card-text extension"></p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="" class="calif" target="_blank"><button class="btn btn-primary">Go somewhere</button></a>
               </div>
               <div class="card-footer text-muted cargo"></div>
             </div>
