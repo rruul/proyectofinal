@@ -49,7 +49,7 @@
                 <p class="card-text conmutador"></p>
                 <p class="card-text extension"></p>
                 <p class="card-text ubicacion"></p>
-                <!-- <a href="" class="calif" target="_blank"><button class="btn btn-primary">Opiniones sobre el profesor</button></a> -->
+                <a href="" class="face" target="_blank"><button class="btn btn-primary">Visitar pagina de Facebook</button></a>
               </div>
             </div>
           </div>
