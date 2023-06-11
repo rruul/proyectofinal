@@ -17,10 +17,18 @@ const servs_elec = (servicio) => {
         cardservs.querySelector('.nombre').innerHTML = serv.servicio
         cardservs.querySelector('.descripcion').innerHTML = "<b>Servicio:</b>"+" "+serv.descripcion
         cardservs.querySelector('.coordinador').innerHTML = "<b>Coordinador:</b>"+" "+serv.coordinador
-        
         cardservs.querySelector('.conmutador').innerHTML = "<b>Telefono:</b>"+" "+serv.telefono
         cardservs.querySelector('.extension').innerHTML = "<b>Extension:</b>"+" "+serv.extension
         cardservs.querySelector('.ubicacion').innerHTML = "<b>Ubicacion:</b>"+" "+serv.ubicacion
+
+        if(serv.face === 'null') {
+            cardservs.querySelector('.face').classList.add('d-none')
+        } else {
+            cardservs.querySelector('.face').classList.remove('d-none')
+            const face = serv.face
+            cardservs.querySelector('.face').setAttribute("href", face)
+
+        }
         const clone = cardservs.cloneNode(true)
         fragment.appendChild(clone)
     })
