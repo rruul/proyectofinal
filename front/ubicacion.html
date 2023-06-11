@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        .nav-item {
+          transition-duration: 0.1s;
+        }
+        .nav-item:hover{
+          background-color: #84a8cd!important;
+          font-weight: 700;
+        }
+      </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -32,13 +41,28 @@
         </nav>
     </header>
     <main>
-        <div style="max-width:100%;overflow:hidden;color:red;width:100vw;height:90vh;">
-            <div id="google-maps-canvas" style="height:100%; width:100%;max-width:100%;">
-                <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=División+de+Ingenierías+Campus+Irapuato+Salamanca+DICIS,+Palo+Blanco,+36787+Salamanca,+Gto.,+México&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
-                </iframe>
+        <div class="row" style="margin: 0; padding: 0;">
+            <div class="col-6" style="margin: 0; padding: 0;">
+                <div style="max-width:100%;overflow:hidden;color:red;width:50vw;height:89vh;">
+                    <div id="google-maps-canvas" style="height:100%; width:100%;max-width:100%;">
+                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=División+de+Ingenierías+Campus+Irapuato+Salamanca+DICIS,+Palo+Blanco,+36787+Salamanca,+Gto.,+México&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                        </iframe>
+                    </div>
+                    <a class="from-embedmap-code" href="https://www.bootstrapskins.com/themes" id="authorize-map-data">premium bootstrap themes</a>
+                    <style>#google-maps-canvas img{max-height:none;max-width:none!important;background:none!important;}</style>
+                </div>
             </div>
-            <a class="from-embedmap-code" href="https://www.bootstrapskins.com/themes" id="authorize-map-data">premium bootstrap themes</a>
-            <style>#google-maps-canvas img{max-height:none;max-width:none!important;background:none!important;}</style>
+            <div class="col-6" style="margin: 0; padding: 0;">
+                <div style="max-width:100%;overflow:hidden;color:red;width:50vw;height:89vh;">
+                    <div id="google-maps-canvas" style="height:100%; width:100%;max-width:100%;">
+                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/streetview?location=20.5073,-101.1933&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                        </iframe>
+                    </div>
+                        <a class="from-embedmap-code" href="https://www.bootstrapskins.com/themes" id="authorize-map-data">premium bootstrap themes</a>
+                        <style>#google-maps-canvas img{max-height:none;max-width:none!important;background:none!important;}</style>
+                </div>
+            </div>
+            
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
