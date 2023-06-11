@@ -1,0 +1,13 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.navbar-light {
+    background-color: #B2C8DF;
+}
+
+.containertop {
+    margin: 0;
+    width: 100%;
+}
