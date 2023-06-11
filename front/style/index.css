@@ -1,3 +1,8 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
 .carousel-caption{
     bottom: 200px;
     z-index: 2;
