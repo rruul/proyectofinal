@@ -1,0 +1,21 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.navbar-light {
+    background-color: #B2C8DF;
+}
+
+.containertop {
+    margin: 0;
+    width: 100%;
+}
+
+.nav-item {
+    transition-duration: 0.1s;
+}
+.nav-item:hover{
+  background-color: #84a8cd!important;
+  font-weight: 700;
+}
