@@ -17,7 +17,7 @@
   <title>Agenda de personal administrativo</title>
 </head>
 
-<body>
+<body style="background-color: #F1F6F9!important;">
   <?php include './header.html';?>
   <main>
     <div class="container-fluid">

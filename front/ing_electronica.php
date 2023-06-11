@@ -16,7 +16,7 @@
   <title>Agenda de personal de ingenieria electronica</title>
 </head>
 
-<body>
+<body style="background-color: #F1F6F9!important;">
   <?php include './header.html';?>
   <main>
     <div class="container-fluid">
