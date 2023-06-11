@@ -2,9 +2,6 @@
 <html lang="en">
 <head>
   <style>
-    .navbar-light{
-      background-color: #B2C8DF;
-    }
     .nav-item {
       transition-duration: 0.1s;
     }
@@ -26,6 +23,10 @@
       <div class="container containertop">
         <a class="navbar-brand" style="display: flex; align-items: center;">
           <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/UGTO.png" alt="Logo" class="logo" width="50" height="50">
+          <div class="container buscarcont">
+            <input class="me-2 barra" type="text" id="barra" placeholder="Buscar servicio" style="max-width: 45vw;">
+            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+          </div>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,28 +39,12 @@
                 Menú
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="../index.php">Inicio</a></li>
+                <li><a class="dropdown-item" href="./index.php">Inicio</a></li>
                 <li><a class="dropdown-item" href="./administracion.php">Agenda</a></li>
-                <li><a class="dropdown-item" href="../horarios/horarios.php">Horarios</a></li>
-                <li><a class="dropdown-item" href="../transporte.html">Transporte</a></li>
-                <li><a class="dropdown-item" href="../ubicacion.html">Ubicación</a></li>
-                <li><a class="dropdown-item" href="../servicios.php">Servicios</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Licenciaturas
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" id="mecanica">Ingeniería Mecánica</a></li>
-                <li><a class="dropdown-item" id="electrica">Ingeniería Eléctrica</a></li>
-                <li><a class="dropdown-item" id="comunicaciones">Ingeniería en Comunicaciones y Electrónica</a></li>
-                <li><a class="dropdown-item" id="mecatronica">Ingeniería en Mecatrónica</a></li>
-                <li><a class="dropdown-item" id="sistemas">Ingeniería en Sistemas Computacionales</a></li>
-                <li><a class="dropdown-item" id="datosyartificial">Ingeniería en Datos e Ingeniería Artifícial</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" id="gestion">Licenciatura en Gestión Empresarial</a></li>
-                <li><a class="dropdown-item" id="artes">Licenciatura en Artes Digitales</a></li>
+                <li><a class="dropdown-item" href="./horarios/horarios.php">Horarios</a></li>
+                <li><a class="dropdown-item" href="./transporte.html">Transporte</a></li>
+                <li><a class="dropdown-item" href="./ubicacion.html">Ubicación</a></li>
+                <li><a class="dropdown-item" href="./servicios.php">Servicios</a></li>
               </ul>
             </li>
           </ul>
@@ -75,7 +60,7 @@
   const logo = document.querySelector('.logo')
 
   logo.addEventListener('click', () => {
-    location.replace('../index.php');
+    location.replace('./index.php');
   })
 </script>
 

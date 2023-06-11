@@ -18,40 +18,39 @@
 </head>
 
 <body>
-  <?php include './header.html';?>
+  <?php include './headerservs.html';?>
   <main>
     <div class="container-fluid">
       <div class="row">
         <div class="col">
-          <h2 class="text-center mb-3">Personal administrativo</h2>
+          <h2 class="text-center mb-3">Servicios</h2>
         </div>
       </div>
       <div class="row">
-        <div class="col contenido" id="profes">
+        <div class="col contenido" id="servs">
           <!-- Contenido del segundo contenedor -->
         </div>
       </div>
     </div>
 
-    <template id="cardprofes">
+    <template id="cardservs">
       <div class="cardstyle">
         <div class="card mb-3" style="max-width: 540px;">
           <div class="row g-0">
+          <div class="card-header text-center nombre"></div>
             <div class="col-md-4">
-              <img src="../img/preofe.png" class="img-fluid rounded-start mt-5">
+              <img src="" class="imgserv img-fluid rounded-start mt-5">
             </div>
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title nombre"></h5>
-                <div class="divmail">
-                  <p class="card-text correo"></p>
-                  <a href="" class="mailto"><i class="fa-solid fa-envelope"></i></a>
-                </div>
+                <p class="card-text descripcion"></p>
+                <p class="card-text coordinador"></p>
                 <p class="card-text conmutador"></p>
                 <p class="card-text extension"></p>
-                <a href="" class="calif" target="_blank"><button class="btn btn-primary">Opiniones sobre el profesor</button></a>
+                <p class="card-text ubicacion"></p>
+                <!-- <a href="" class="calif" target="_blank"><button class="btn btn-primary">Opiniones sobre el profesor</button></a> -->
               </div>
-              <div class="card-footer text-muted cargo"></div>
             </div>
           </div>
         </div>

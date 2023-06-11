@@ -1,7 +1,7 @@
 <?php
     include 'conexion.php';
 
-    $sql = 'SELECT * FROM administracion';
+    $sql = 'SELECT * FROM servicios';
     $resultado = mysqli_query($conn, $sql);
 
     $arreglon = array();
@@ -13,6 +13,6 @@
     $resultados = json_encode($arreglon);
 
     echo "<script>";
-    echo "var administracion = " . $resultados . ";";
+    echo "var servicios = " . $resultados . ";";
     echo "</script>";
 ?>

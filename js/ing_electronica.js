@@ -15,11 +15,22 @@ const profes_elec = (profes) => {
         cardprofes.querySelector('.nombre').innerHTML = profe.nombre
         cardprofes.querySelector('.correo').innerHTML = "<b>Correo:</b>"+" "+profe.correo
         const refmail = "mailto:"+profe.correo
-        const calif = profe.calif
         cardprofes.querySelector('.mailto').setAttribute("href", refmail)
-        cardprofes.querySelector('.calif').setAttribute("href", calif)
         cardprofes.querySelector('.conmutador').innerHTML = "<b>Conmutador:</b>"+" "+profe.conmutador
-        cardprofes.querySelector('.extension').innerHTML = "<b>Extension:</b>"+" "+profe.extension
+        let extensione = profe.extension
+        if (extensione === ''){
+            cardprofes.querySelector('.extension').innerHTML = ''
+        } else {
+            cardprofes.querySelector('.extension').innerHTML = "<b>Extension:</b>"+" "+extensione
+        }
+        let calif = profe.calif
+        if (calif === '') {
+            cardprofes.querySelector('.calif').classList.add('d-none')
+            cardprofes.querySelector('.calif').removeAttribute("href")
+        } else {
+            cardprofes.querySelector('.calif').classList.remove('d-none')
+            cardprofes.querySelector('.calif').setAttribute("href", calif)
+        }
         const clone = cardprofes.cloneNode(true)
         fragment.appendChild(clone)
     })

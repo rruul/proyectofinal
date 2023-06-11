@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./style/index.css">
     <title>Bienvenido a DICIS!</title>
   </head>
-  <body>
+  <body style="background-color: #F1F6F9!important;">
     <?php include './headeri.html';?>
     <main>
       <!--Carousel section-->
