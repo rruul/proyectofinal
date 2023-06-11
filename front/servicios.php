@@ -1,6 +1,7 @@
 <?php
-    include '../back/ing_electrica.php';
+    include '../back/servicios.php';
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +23,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col">
-          <h2 class="text-center mb-3">Personal del departamento de Ingenieria electrica</h2>
+          <h2 class="text-center mb-3">Personal administrativo</h2>
         </div>
       </div>
       <div class="row">
@@ -37,7 +38,7 @@
         <div class="card mb-3" style="max-width: 540px;">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="../img/preofe.png" class="img-fluid rounded-start">
+              <img src="../img/preofe.png" class="img-fluid rounded-start mt-5">
             </div>
             <div class="col-md-8">
               <div class="card-body">
@@ -50,6 +51,7 @@
                 <p class="card-text extension"></p>
                 <a href="" class="calif" target="_blank"><button class="btn btn-primary">Opiniones sobre el profesor</button></a>
               </div>
+              <div class="card-footer text-muted cargo"></div>
             </div>
           </div>
         </div>
@@ -60,7 +62,7 @@
 
 
 
-  <script src="../js/ing_electrica.js"></script>
+  <script src="../js/servicios.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

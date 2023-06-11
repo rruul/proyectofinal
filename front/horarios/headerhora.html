@@ -1,39 +1,56 @@
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="../index.php">
-          <img src="ruta_del_logo" alt="Logo" width="50" height="50">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .navbar-light{
+      background-color: #B2C8DF;
+    }
+    .nav-item {
+      transition-duration: 0.1s;
+    }
+    .nav-item:hover{
+      background-color: #84a8cd!important;
+      font-weight: 700;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/header.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container containertop">
+        <a class="navbar-brand" style="display: flex; align-items: center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/UGTO.png" alt="Logo" class="logo" width="50" height="50">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbarNav" style="margin: 0; padding: 0;">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" id="mecanica">Mecanica</a>
+              <a class="nav-link" aria-current="page" href="../index.php">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" id="electrica">Electrica</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="comunicaciones">Comunicaciones y Electronica</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="mecatronica">Mecatronica</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="sistemas">Sistemas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="gestion">Gestion</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="artes">Artes Digitales</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="datosyartificial">Ing. en Datos e Ing. Artificial</a>
-            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Licenciaturas
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" id="mecanica">Ingeniería Mecánica</a></li>
+                <li><a class="dropdown-item" id="electrica">Ingeniería Eléctrica</a></li>
+                <li><a class="dropdown-item" id="comunicaciones">Ingeniería en Comunicaciones y Electrónica</a></li>
+                <li><a class="dropdown-item" id="mecatronica">Ingeniería en Mecatrónica</a></li>
+                <li><a class="dropdown-item" id="sistemas">Ingeniería en Sistemas Computacionales</a></li>
+                <li><a class="dropdown-item" id="datosyartificial">Ingeniería en Datos e Ingeniería Artifícial</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" id="gestion">Licenciatura en Gestión Empresarial</a></li>
+                <li><a class="dropdown-item" id="artes">Licenciatura en Artes Digitales</a></li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -41,3 +58,20 @@
       </div>
     </nav>
 </header>
+</body>
+</html>
+
+<script>
+  const logo = document.querySelector('.logo')
+
+  logo.addEventListener('click', () => {
+    location.replace('../index.php');
+  })
+</script>
+
+
+<style>
+  .logo:hover{
+    cursor: pointer;
+  }
+</style>

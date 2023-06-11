@@ -15,10 +15,10 @@ const profes_elec = (profes) => {
         cardprofes.querySelector('.nombre').innerHTML = profe.nombre
         cardprofes.querySelector('.correo').innerHTML = "<b>Correo:</b>"+" "+profe.correo
         const refmail = "mailto:"+profe.correo
-        //const calif = profe.calif
+        const calif = profe.calif
         
         cardprofes.querySelector('.mailto').setAttribute("href", refmail)
-        //cardprofes.querySelector('.calif').setAttribute("href", calif)
+        cardprofes.querySelector('.calif').setAttribute("href", calif)
         cardprofes.querySelector('.conmutador').innerHTML = "<b>Conmutador:</b>"+" "+profe.conmutador
         cardprofes.querySelector('.extension').innerHTML = "<b>Extension:</b>"+" "+profe.extension
         cardprofes.querySelector('.cargo').innerHTML = "<b>Cargo:</b>"+" "+profe.cargo
