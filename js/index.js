@@ -7,6 +7,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
 closeModal.addEventListener('click', () => {
     modal.classList.remove('modalShow')
-    categoria = 'Estrenos'
-    loadEstYPop(1)
 })
