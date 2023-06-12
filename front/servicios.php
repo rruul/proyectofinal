@@ -17,7 +17,7 @@
   <title>Título de tu página</title>
 </head>
 
-<body>
+<body style="background-color: #F1F6F9!important;">
   <?php include './headerservs.html';?>
   <main>
     <div class="container-fluid">
