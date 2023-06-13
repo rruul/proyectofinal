@@ -50,13 +50,13 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <label for="validationCustom01" class="form-label">Nombre completo o con el que te identificaran las demas personas</label>
+                    <label for="validationCustom01" class="form-label">Nombre completo o con el que te identificaran las demas personas *</label>
                     <input type="text" name="nombre" class="form-control" id="validationCustom01" require>
-                    <label for="validationCustom03" class="form-label mt-3">Correo de contacto</label>
-                    <input type="text" name="correo" class="form-control" id="validationCustom03"></textarea>
-                    <label for="validationCustom02" class="form-label mt-3">Numero de contacto</label>
+                    <label for="validationCustom03" class="form-label mt-3">Correo de contacto *</label>
+                    <input type="email" name="correo" class="form-control" id="validationCustom03"></input>
+                    <label for="validationCustom02" class="form-label mt-3">Numero de contacto *</label>
                     <input type="number" name="numero" class="form-control" id="validationCustom02" require>
-                    <label for="validationCustom05" class="form-label mt-3">Producto, servicio que ofrescas o funcion que cumplas</label>
+                    <label for="validationCustom05" class="form-label mt-3">Producto, servicio que ofrescas o funcion que cumplas *</label>
                     <textarea type="text" name="descripcion" class="form-control" id="validationCustom05" required></textarea>
                 </div>
                 <div class="modal-footer">
@@ -82,7 +82,11 @@
                   <p class="card-text correo"></p>
                   <a href="" class="mailto"><i class="fa-solid fa-envelope"></i></a>
                 </div>
-                <p class="card-text conmutador"></p>
+                <div class="divmail">
+                  <p class="card-text conmutador"></p>
+                  <a href="" class="wht" target="_blank"><i class="fa-brands fa-square-whatsapp" style="color: #005eff; margin-left: 7px;"></i></i></a>
+                </div>
+                
                 <p class="card-text descripcion"></p>
             </div>
             </div>

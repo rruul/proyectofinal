@@ -5,8 +5,8 @@
             echo '<div class="alert alert-danger">CAMPO/S VACIO/S</div>';
         } else {
             $nombre = $_POST['nombre'];
-            $correo = $_POST['descripcion'];
-            $numero = $_POST['horas'];
+            $correo = $_POST['correo'];
+            $numero = $_POST['numero'];
             $descripcion = $_POST['descripcion'];
 
             

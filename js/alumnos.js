@@ -19,6 +19,9 @@ const servs_elec = (servicio) => {
 
         cardservs.querySelector('.conmutador').innerHTML = "<b>Telefono:</b>"+" "+serv.numero
 
+        const what = "https://wa.me/52"+serv.numero
+        cardservs.querySelector('.wht').setAttribute("href", what)
+
         cardservs.querySelector('.descripcion').innerHTML = "<b>Servicio:</b>"+" "+serv.descripcion
         
         const clone = cardservs.cloneNode(true)
