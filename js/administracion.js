@@ -14,10 +14,14 @@ const profes_elec = (profes) => {
     profes.forEach((profe) => {
         cardprofes.querySelector('.nombre').innerHTML = profe.nombre
         cardprofes.querySelector('.correo').innerHTML = "<b>Correo:</b>"+" "+profe.correo
-        const refmail = "mailto:"+profe.correo
-        cardprofes.querySelector('.mailto').setAttribute("href", refmail)
         cardprofes.querySelector('.conmutador').innerHTML = "<b>Conmutador:</b>"+" "+profe.conmutador
         cardprofes.querySelector('.cargo').innerHTML = "<b>Cargo:</b>"+" "+profe.cargo
+        cardprofes.querySelector('.correoauto').setAttribute("value", profe.correo)
+        const prueba = "#modal"+profe.id
+        cardprofes.querySelector('.mailto').setAttribute("data-bs-target", prueba)
+        cardprofes.querySelector('.mailto').setAttribute("id", profe.id)
+        const prueba2 = "modal"+profe.id
+        cardprofes.querySelector('.modal').setAttribute("id", prueba2)
         let extensione = profe.extension
         if (extensione === ''){
             cardprofes.querySelector('.extension').innerHTML = ''
