@@ -8,6 +8,12 @@
 <html lang="en">
 
 <head>
+  <style>
+    .textos{
+      display: flex;
+      justify-content: flex-end;
+    }
+  </style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css">
@@ -15,7 +21,7 @@
   <link rel="stylesheet" href="./style/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <title>Título de tu página</title>
+  <title>Nuestra Comunidad</title>
 </head>
 
 <body style="background-color: #F1F6F9!important;">
@@ -24,7 +30,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col">
-            <div>
+            <div class="textos">
                 <h2 class="text-center mb-3">Alumnos</h2>
                 <button type="button" class="btn btnregistrar" data-bs-toggle="modal" data-bs-target="#registraralumno" style="margin-top: 50px!important; margin-left: 28vw; background-color: #19A7CE; color: white; transition-duration: 0.1s!important;">
                     <i class="bi bi-plus-circle-fill" style="margin-right: 5px;"></i>Registrar persona
