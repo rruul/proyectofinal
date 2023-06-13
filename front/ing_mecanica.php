@@ -69,7 +69,7 @@
               <form novalidate id="formulario" class="form" method="post">
                 <div class="mb-3">
                   <label for="destinatario" class="col-form-label">Para: </label>
-                  <input type="text" name="destinatario" id="destinatario" value="" readonly class="correoauto">
+                  <input type="text" name="destinatario" id="destinatario" value="" readonly class="form-control correoauto">
                 </div>
                 <div class="mb-3">
                   <label for="correo" class="col-form-label" required>Tu correo: </label>
